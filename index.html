@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>punnery</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <script type="module" src="scripts/index.js"></script>
+  </head>
+  
+  <body>
+    <h1>punnery</h1>
+    <p>find words which include your name, for humour</p>
+
+    <form id="userInput">
+      <h2>enter your first name</h2>
+
+      <div class="formElement">
+        <label for="name">name:</label>
+        <input type="text" id="name" name="name" required />
+      </div>
+
+      <input type="submit" value="go!" id="submit" />
+    </form>
+
+    
+    <section id="outputContainer">
+      <h2 id="matchesTitle">matches</h2>
+      <div id="output"> </div>
+
+      <div id="outputControls">
+        <button id="previous">previous</button>
+        <button id="next">next</button>
+      </div>
+    </section>
+  </body>
+</html>

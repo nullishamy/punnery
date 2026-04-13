@@ -1,0 +1,67 @@
+:root{
+  --space-xs: 0.5rem;
+  --space-sm: 1rem;
+  --space-md: 2rem;
+  --space-lg: 3rem;
+  --space-xl: 4rem;
+}
+
+h1, h2, p, span {
+    display: block;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-sm);
+    max-width: 35%;
+    margin: auto auto;
+    padding: var(--space-sm)
+}
+
+#outputContainer {
+    border-width: 0.1rem;
+    border-color: black;
+    border-style: solid;
+    padding: var(--space-xs);
+}
+
+#output {
+    margin-top: var(--space-sm);
+    margin-bottom: var(--space-sm);
+    gap: var(--space-xs);
+}
+
+#meaningLink {
+    margin-left: var(--space-xs);
+    margin-right: var(--space-xs);
+}
+
+#meaning {
+    margin-top: var(--space-xs);
+    min-height: var(--space-md);
+}
+
+#userInput {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-sm);
+    border-width: 0.1rem;
+    border-color: black;
+    border-style: solid;
+    padding: var(--space-xs);
+    margin-top: var(--space-sm);
+}
+
+.formElement {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-items: center;
+    gap: var(--space-sm);
+}
+
+#submit {
+    padding: var(--space-xs);
+}
