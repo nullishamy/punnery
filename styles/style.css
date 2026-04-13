@@ -11,11 +11,22 @@ h1, h2, p, span {
     margin: 0;
 }
 
+@media (min-width:1025px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        gap: var(--space-sm);
+        max-width: 35%;
+        margin: auto auto;
+        padding: var(--space-sm)
+    }
+}
+
 body {
     display: flex;
     flex-direction: column;
     gap: var(--space-sm);
-    max-width: 35%;
+    max-width: 95%;
     margin: auto auto;
     padding: var(--space-sm)
 }
