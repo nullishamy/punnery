@@ -6,6 +6,7 @@ const outputElement = $("#output")
 
 const previousButton = $("#previous")
 const nextButton = $("#next")
+const luckyButton = $("#lucky")
 
 const matchesTitle = $("#matchesTitle")
 
@@ -79,6 +80,17 @@ previousButton.addEventListener("click", event => {
     nextButton.disabled = false
 
     state.currentMatch--
+    renderOutput()
+})
+
+luckyButton.addEventListener("click", event => {
+    event.preventDefault()
+
+    nextButton.disabled = false
+    previousButton.disabled = false
+
+    state.currentMatch = Math.floor(Math.random() * state.matches.length)
+
     renderOutput()
 })
 
